@@ -3,7 +3,17 @@
   margin: 0;
 }
 body {
-  background-color: #030303f6;
+  background:
+    radial-gradient(
+      circle at right,
+      rgba(12, 12, 12, 0.945) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at left,
+      rgba(0, 0, 0, 0.945) 0%,
+      rgb(27, 27, 27) 100%
+    );
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -24,7 +34,7 @@ ul {
   display: flex;
   gap: 25px;
   list-style-type: none;
-  background-color: rgba(255, 255, 255, 0.03) ;
+  background-color: rgba(255, 255, 255, 0.03);
   height: 40px;
   text-align: center;
   align-items: center;
@@ -33,49 +43,47 @@ ul {
 }
 
 .imgPessoal {
-  width: 270px;
-  display: flex;
+  width: 300px;
+  margin: 30px;
   border-radius: 20px;
-  margin-right: 100px;
   margin-left: auto;
-  box-shadow: 2px 2px 13px rgb(53, 52, 52);
-  margin-top: 50px;
+  box-shadow: 0 0 25px rgb(7, 7, 7);
+  margin-top: 70px;
+  right: auto;
+  left: auto;
+  display: block;
+  transition: 0.3s;
 }
-.animation{
-  animation: typing 3s infinite alternate ease-in-out;
-  font-family:monospace;
+.animation {
+  animation: flutuar 3s infinite alternate ease-in-out;
+  font-family: monospace;
   font-size: 23px;
-  
-  
+  letter-spacing: 4px;
 }
-
-.sub{
+.sub {
   display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-   background: rgba(48, 47, 47, 0.05);  
+  background: rgba(48, 47, 47, 0.05);
   width: 300px;
   margin: auto;
   padding: 100px;
   border-radius: 15px;
   margin-top: -60px;
-  border:2px solid rgb(15, 15, 15);
+  border: 2px solid rgb(15, 15, 15);
   box-shadow: 15px 15px 35px black;
-  
-  }
+  transition: 0.3s ease;
+}
 
 .tudo {
   padding: 10px;
-margin-top: -70px; 
-transition: 0.3;
+  margin-top: auto;
+  transition: 0.3s;
 }
 
 .titulo {
   margin: 10px;
   margin-top: -300px;
   color: #575656da;
- 
 }
 
 .mais {
@@ -88,7 +96,7 @@ transition: 0.3;
 
 .hr1 {
   width: 300px;
-  margin-top: -200px;
+  margin-top: -250px;
   border: 1px solid rgb(37, 37, 37);
 }
 
@@ -97,9 +105,8 @@ transition: 0.3;
   color: #a0a0a0;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-top: 10px;
+  margin-top: 14px;
   padding: 2px;
-
 }
 
 .direitos {
@@ -108,35 +115,46 @@ transition: 0.3;
   display: flex;
   align-items: center;
   text-align: center;
-  margin-top: 199px;
+  margin-top: 180px;
   justify-content: center;
   padding: 10px;
-  background-color:rgba(48, 47, 47, 0.1)
+  background-color: rgba(48, 47, 47, 0.1);
 }
 ul a {
   color: white;
   text-decoration: none;
   transition: 0.3s;
-  display:flex;
+  display: flex;
 }
 
-ul a:hover{
+ul a:hover {
   transform: scale(1.15);
-  color: rgb(73, 72, 72);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(167, 164, 164);
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
 
-@keyframes typing {
+.sub:hover {
+  transform: scale(1.15);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.24);
+}
+
+.imgPessoal:hover {
+  transform: scale(1.1);
+}
+
+@keyframes flutuar {
   from {
     opacity: 0.5;
-    transform: translateX(15px) rotate(1deg);
-}
+    transform: translateY(15px) rotate(1deg);
+  }
 
   to {
-    opacity: 1;
-    transform: translateX(-15px) rotate(-1deg);
+    opacity: 0.5;
+    transform: translateY(-15px) rotate(-1deg);
   }
 }
-  html {
+html {
   scrollbar-width: none;
-  }
+}
