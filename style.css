@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #0b0b0b;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.logoTipo {
+  width: 75px;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.01);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+ul {
+  justify-content: center;
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.03);
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  border-radius: 16px;
+  padding: 5px;
+}
+
+.imgPessoal {
+  width: 270px;
+  display: flex;
+  border-radius: 20px;
+  margin-right: 100px;
+  margin-left: auto;
+  box-shadow: 2px 2px 13px rgb(53, 52, 52);
+  margin-top: 50px;
+}
+
+.tudo {
+  padding: 10px;
+  margin-top: -70px;
+}
+
+.titulo {
+  margin: 30px;
+  margin-top: -300px;
+  color: #575656da;
+}
+
+.mais {
+  color: #272626;
+}
+
+.css {
+  color: #525252;
+}
+
+.hr1 {
+  width: 300px;
+  margin-top: -20px;
+  border: 1px solid rgb(37, 37, 37);
+}
+
+.text {
+  width: 300px;
+  color: #a0a0a0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.direitos {
+  color: #525252;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 199px;
+  justify-content: center;
+  padding: 5px;
+}
